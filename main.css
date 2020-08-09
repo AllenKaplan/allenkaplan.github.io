@@ -1,0 +1,91 @@
+html {
+  background: #457b9d;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  header {
+    background: #1d3557;
+    padding: 2rem;
+  }
+  
+  main {
+    background: #457b9d;
+    display: grid;
+    padding: 1rem 0 1rem 0;
+    /* grid-template-columns: repeat(12, 1fr); */
+  }
+  
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      grid-gap: 1rem;
+      /* grid-template-columns: repeat(12, 1fr); */
+      /* grid-template-columns: repeat(auto-fit, minmax(300px, 2fr)); */
+  }
+
+  footer {
+    background: #a8dadc;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem
+  }
+  
+  body {
+    font-family: system-ui, sans-serif;
+  }
+
+  h1 {
+    color: white;
+  }
+
+
+  .container > div {
+    background: #1d3557;
+    /* max-height: 300px; */
+    color: white;
+    padding: 1rem; 
+    place-content: center;
+    text-align: left;
+    width: min(50%, 800px);
+  }
+
+  .headshot {
+    place-content: center;
+    padding-right: 1em;
+  }
+
+  .headshot > img {
+    max-width: 256px;
+    height: auto;
+  }
+  
+  .bio {
+   display: flex;
+
+  }
+
+  .strava {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .strava > iframe {
+    width: 100%;
+    height: max(180px, 75%);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .awards > ul > li {
+    font-weight: bold;
+  }
+
+
+  .right {
+    float: right;
+    font-weight: normal;
+    margin-right: 2rem;
+  }
