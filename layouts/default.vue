@@ -116,7 +116,7 @@ export default {
         {
           icon: "mdi-book-open-blank-variant",
           title: "Blog",
-          to: "/blig",
+          to: "/blog",
         },
         {
           icon: "mdi-card-account-mail",
