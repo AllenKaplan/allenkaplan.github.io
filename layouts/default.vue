@@ -98,11 +98,11 @@ export default {
           title: "Home",
           to: "/",
         },
-        {
-          icon: "mdi-account-circle",
-          title: "About",
-          to: "/about",
-        },
+        // {
+        //   icon: "mdi-account-circle",
+        //   title: "About",
+        //   to: "/about",
+        // },
         {
           icon: "mdi-file-document",
           title: "Resume",

@@ -1,89 +1,77 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+  <v-container>
+    <v-row justify="center" class="my-4">
+      <v-col cols="12" sm="3" md="4">
+        <div class="text-center">
+          <v-img class="headshot" src="headshot.png" />
+        </div>
+      </v-col>
+      <v-col cols="12" sm="9" md="8">
+        <div>
+          <h1>About Me</h1>
+          <ul>
+            <li>
+              4th Year Software Engineering student in the Big Data stream
+              enrolled at the Lassonde School of Engineering at York University
+              in Toronto
+            </li>
+            <li>
+              Passion for technological innovation, entrepreneurship and
+              community involvement
+            </li>
+            <li>
+              Held positions in my school community such as President of the
+              Engineering Student Union and the Chair of Orientation Week (York
+              has the longest orientation in Canada at 9 full days)
+            </li>
+            <li>
+              Engaged in the local tech community- engaged within the Golang
+              Toronto (especially pre-covid)
+            </li>
+            <li>
+              I have a deep passion for technology and entrepreneurship that
+              grow from the incubator at my school- BEST Lab, where I currently
+              am working as a research assistant studying design sprints until
+              the end of April 2021
+            </li>
+            <li>
+              In my free time, I attend many conferences, competitions and
+              hackathons—one of things I miss most about in person events
+            </li>
+            <li>
+              Between my school community and the technology community, I really
+              care about mentorship and helping pass on what I know to my peers
+              so they can mentor others themselves
+            </li>
+            <li>
+              Beyond that, I also really enjoy the outdoors and I love to hike,
+              camp and go cycling
+            </li>
+          </ul>
+        </div>
+      </v-col>
+    </v-row>
+    <v-row justify="center" class="my-4">
+      <v-col cols="12" sm="3" md="4">
+        <ul>
+          <li>Age: 21</li>
+          <li>Occuption: Software Engineering Student</li>
+          <li>Location: Toronto, Canada</li>
+          <li>Interests: hiking, cycling, camping, programming, politics</li>
+          <li>Favourite programming lanugage: Golang</li>
+        </ul>
+      </v-col>
+      <v-col cols="12" sm="9" md="8"> </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
-export default {
-  components: {
-    Logo,
-    VuetifyLogo
-  }
-}
+export default {};
 </script>
+
+<style>
+.headshot {
+  border-radius: 2em;
+}
+</style>
