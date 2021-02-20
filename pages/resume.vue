@@ -5,7 +5,7 @@
         Please click here for a direct link to my resume
       </a>
     </div>
-    <iframe src="/Allen_Kaplan_Resume.pdf" width="100%" height="750px" />
+    <iframe src="/Allen_Kaplan_Resume.pdf" width="100%" height="1000" />
   </div>
 </template>
 

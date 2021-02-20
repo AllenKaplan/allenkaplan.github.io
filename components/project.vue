@@ -1,23 +1,35 @@
 <template>
-  <v-card class="mx-auto" max-width="80%" outlined>
-    <v-list-item three-line>
-      <v-list-item-content>
-        <div class="overline">{{ project.languages }}</div>
-        <div class="mb-4">{{ project.date }}</div>
-        <v-list-item-title class="headline mb-1">
-          {{ project.name }}
-        </v-list-item-title>
-        <v-list-item-subtitle>{{ project.description }}</v-list-item-subtitle>
-      </v-list-item-content>
+  <v-card class="mx-auto my-6 pa-4" max-width="80%" outlined>
+    <div class="ma-2">
+      <h1 class="headline mb-1">
+        {{ project.name }}
+      </h1>
+      <p class="mb-4">{{ project.date }}</p>
 
-      <v-list-item-avatar tile size="128" color="grey">
-        <v-img :src="project.img" />
-      </v-list-item-avatar>
-    </v-list-item>
+      <v-chip
+        v-for="lang in project.languages"
+        :key="lang"
+        class="overline mb-6 mx-1"
+      >
+        {{ lang }}
+      </v-chip>
 
-    <v-card-actions>
-      <v-btn outlined rounded :href="project.link"> Github Link</v-btn>
-    </v-card-actions>
+      <p class="description">{{ project.description }}</p>
+
+      <v-carousel v-if="project.imgs" v-model="model">
+        <v-carousel-item v-for="img in project.imgs" :key="img">
+          <v-sheet height="100%" tile>
+            <v-row class="fill-height" align="center" justify="center">
+              <v-img :src="img" />
+            </v-row>
+          </v-sheet>
+        </v-carousel-item>
+      </v-carousel>
+
+      <div v-for="link in project.links" :key="link.link" class="my-4">
+        <v-btn outlined rounded :href="link.link">{{ link.name }}</v-btn>
+      </div>
+    </div>
   </v-card>
 </template>
 
@@ -25,10 +37,13 @@
 export default {
   props: ["project"],
   data() {
-    return {};
+    return { model: 0 };
   },
 };
 </script>
 
 <style>
+.description {
+  font-size: 20px;
+}
 </style>
