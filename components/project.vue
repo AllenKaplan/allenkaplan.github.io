@@ -16,19 +16,17 @@
 
       <p class="description">{{ project.description }}</p>
 
-      <v-carousel v-if="project.imgs" v-model="model">
+      <v-carousel v-if="project.imgs" v-model="model" max-height="75vh">
         <v-carousel-item v-for="img in project.imgs" :key="img">
-          <v-sheet height="100%" tile>
-            <v-row class="fill-height" align="center" justify="center">
-              <v-img :src="img" />
-            </v-row>
-          </v-sheet>
+          <v-img :src="img" contain height="100%" />
         </v-carousel-item>
       </v-carousel>
 
-      <div v-for="link in project.links" :key="link.link" class="my-4">
-        <v-btn outlined rounded :href="link.link">{{ link.name }}</v-btn>
-      </div>
+      <v-row class="my-4">
+        <div v-for="link in project.links" :key="link.link" class="mx-2">
+          <v-btn outlined rounded :href="link.link">{{ link.name }}</v-btn>
+        </div>
+      </v-row>
     </div>
   </v-card>
 </template>

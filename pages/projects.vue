@@ -15,8 +15,9 @@ export default {
       projects: [
         {
           date: "September 2020 - December 2020",
-          name: "WheyPal",
-          imgs: ["headshot.png", "headshot.png", "headshot.png"],
+          name:
+            "WheyPal -- Your Workout Buddy Finder // EECS 4314 Advanced Software Engineering",
+          imgs: ["wheypal-1.png", "wheypal-2.png"],
           languages: [
             "Golang",
             "Vue.js",
@@ -40,8 +41,13 @@ export default {
         },
         {
           date: "October 2020 - December 2020",
-          name: "TheSmartShopper.Online",
-          // imgs: ["headshot.png"],
+          name:
+            "TheSmartShopper.Online -- Shopping, but smarter // EECS 4312 Software Requirements Engineering",
+          imgs: [
+            "thesmartshopper-1.png",
+            "thesmartshopper-2.png",
+            "thesmartshopper-3.png",
+          ],
           languages: [
             "Golang",
             "Vue.js",
@@ -51,15 +57,22 @@ export default {
             "Amazon Web Services",
           ],
           description:
-            "Led the development of a 6 person team in implementing a system for optomizing time to find items for customers to increase efficency during COVID-19. The project was created as the EECS 4313 - Software Requirements Engineering Term Project",
+            "Led the development of a 6 person team in implementing a system for optomizing time to find items for customers to increase efficency during COVID-19.",
           links: [
             { name: "github", link: "https://github.com/AkinAD/basedCode/" },
+            { name: "website", link: "https://thesmartshopper.online/home" },
           ],
         },
         {
           date: "January 2021",
-          name: "mtnr.tech",
-          imgs: ["headshot.png"],
+          name: "mtnr.tech - HackTheNorth++",
+          imgs: [
+            "mntr-1.png",
+            "mntr-2.png",
+            "mntr-3.png",
+            "mntr-4.jpg",
+            "mntr-5.jpg",
+          ],
           languages: [
             "Golang",
             "Vue.js",
@@ -73,17 +86,90 @@ export default {
             "Throughout this hackathon, I mentored a team of new students who had never bmuilt a project before. Our project, mntr.tech is a flexible online platform for connecting mentors and mentees in a way that encourages user retention. ",
           links: [
             { name: "devpost", link: "https://devpost.com/software/mntr-tech" },
+            {
+              name: "github - backend",
+              link: "https://github.com/hackthenorth2020/mntr-backend/",
+            },
+            {
+              name: "github - frontend",
+              link: "https://github.com/hackthenorth2020/vue-firebase",
+            },
           ],
         },
         {
           date: "Febuary 2021",
           name: "Paers - Hackville20201",
-          imgs: ["headshot.png"],
+          imgs: ["paers-1.png", "paers-2.jpg", "paers-3.jpg", "paers-4.png"],
           languages: ["Flutter", "Dart", "Google Cloud Platform", "Firebase"],
           description:
             "Paers lets users select their specific personal attributes like their religion, race, ethnicity, sexual orientation, and helps them meet mentors, and peers who are willing to share their experiences. They will get a guide on how to be successful in life and their educational path.",
           links: [
             { name: "devpost", link: "https://devpost.com/software/paers" },
+            {
+              name: "github",
+              link: "https://github.com/sunoftherock/HackvilleChat",
+            },
+            { name: "pitch", link: "https://youtu.be/0lM3O-PBC34" },
+          ],
+        },
+        {
+          date: "January 2020 - April 2020",
+          name: "Hunter x Hunter Card Shop // EECS 4413 E-Commerce Systems",
+          languages: [
+            "Java",
+            "Apache Tomcat",
+            "Java Servlets",
+            "REST API",
+            "JSON",
+            "SQL",
+            "DB2",
+            "HTML",
+            "CSS",
+            "JavaScript",
+          ],
+          description:
+            "On a team of 4 people, I worked as the project manager and systems desicner to create an e-commerce solution. " +
+            "The Masadora Card Shop was based on the fictional card shop based on the book and show 'Hunter x Hunter'." +
+            " System was created through Java Tomcat with an MVC framework and SQL database.",
+          links: [
+            {
+              name: "github",
+              link: "https://github.com/AllenKaplan/Card-Shop",
+            },
+          ],
+        },
+        {
+          date: "January 2019 - April 2019",
+          name: "Radio Reader",
+          languages: ["Go"],
+          description:
+            "Built with Golang in August 2019 to add microservices communicating through gRPC and concurrency." +
+            " Used cron jobs to perform HTTP GET requests to web player’s API which stored responses to a SQL database. " +
+            "Developed analytics dashboard of the most played songs, most played artists and new songs this week.",
+          links: [
+            {
+              name: "github - go",
+              link: "https://github.com/AllenKaplan/RadioReader-Go",
+            },
+            {
+              name: "github - java",
+              link: "https://github.com/AllenKaplan/RadioReader-Java",
+            },
+          ],
+        },
+        {
+          date: "August 2018 - September 2018",
+          name:
+            "TalkBox -- NLP x Assistive Speech Device // EECS 2311 Software Development Project",
+          languages: ["Java", "Jenkins", "CI/CD"],
+          description:
+            "Developed by a team of three people, the assistive speech device named TalkBox supports individuals who are unable to speak. " +
+            "With the Natural Language Generation Java Library, the TalkBox allows the user to select various nouns, verbs and pronouns to generate sentences that are then read with text-to-speech. The TalkBox simulator and configuration apps are derived from the TalkBox Community Research Project, which has been undertaken by faculty and students of the Lassonde School of Engineering at York University to provide a low-cost open-source, open-hardware Speech Generating Device for those who need such devices.",
+          links: [
+            {
+              name: "github",
+              link: "https://github.com/AllenKaplan/TalkBox",
+            },
           ],
         },
       ],
