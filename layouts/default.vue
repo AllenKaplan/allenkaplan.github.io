@@ -34,7 +34,7 @@
     </v-navigation-drawer>
 
     <v-app-bar app>
-      <span class="hidden-sm-and-up">
+      <span class="hidden-md-and-up">
         <v-app-bar-nav-icon @click="drawer = !drawer"> </v-app-bar-nav-icon>
       </span>
       <v-app-bar-title>
@@ -43,7 +43,7 @@
         </router-link>
       </v-app-bar-title>
       <v-spacer />
-      <v-app-bar-items class="hidden-xs-only">
+      <v-app-bar-items class="hidden-sm-and-down">
         <v-btn
           text
           v-for="(item, i) in items"
@@ -124,8 +124,14 @@ export default {
           to: "/contact",
         },
       ],
-      title: "Allen Kaplan",
+      title: "Allen Kaplan // SWE",
     };
   },
 };
 </script>
+
+<style>
+#app {
+  font-family: "Segoe UI", sans-serif;
+}
+</style>

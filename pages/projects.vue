@@ -64,6 +64,41 @@ export default {
           ],
         },
         {
+          date: "Feburary 2021",
+          name: "Rendezvous - Brickhack 7 // CockroachDB Prize",
+          imgs: [
+            "rendezvous-1.png",
+            "rendezvous-2.png",
+            "rendezvous-3.png",
+            "rendezvous-4.png",
+          ],
+          languages: [
+            "Golang",
+            "React.js",
+            "Docker",
+            "CockroachDB",
+            "Google Cloud Platform",
+            "Firebase",
+          ],
+          description:
+            "Created a 3-tier web platform to create 'rendezvous'' through matching users based on interest at locations around them. Now, people can focus on where they want to go instead of who they want to go with. Our team won the CockroachDB Prize for use of the platform to enable large scale matchmaking.",
+          links: [
+            {
+              name: "devpost",
+              link: "https://devpost.com/software/rendezvous-bredsm",
+            },
+            {
+              name: "github org",
+              link: "https://github.com/brickhack7",
+            },
+            {
+              name: "pitch deck",
+              link:
+                "https://docs.google.com/presentation/d/15dhcTAOOlJLnyDyCVQNPwH8hMKHtCepHoQ3SjE5OA1U/edit?usp=sharing",
+            },
+          ],
+        },
+        {
           date: "January 2021",
           name: "mtnr.tech - HackTheNorth++",
           imgs: [

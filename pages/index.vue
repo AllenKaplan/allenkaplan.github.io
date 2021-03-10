@@ -1,26 +1,52 @@
 <template>
   <v-container>
-    <v-row justify="center" class="my-4">
-      <v-col cols="12" sm="3" md="4">
-        <div class="text-center">
-          <v-img class="headshot" src="headshot.png" />
-        </div>
-      </v-col>
-      <v-col cols="12" sm="9" md="8">
-        <div>
-          <p style="font-size: 24px"><i>Incoming SWE Intern @ Coinbase</i></p>
-
-          <ul class="about">
-            <li>Age: 21</li>
-            <li>Occuption: Software Engineering Student</li>
-            <li>Location: Toronto, Canada</li>
-            <li>Interests: hiking, cycling, camping, programming, politics</li>
-            <li>Favourite programming lanugage: Golang</li>
-          </ul>
-        </div>
+    <v-row class="my-4">
+      <v-col>
+        <!-- <p style="font-size: 24px"><i>Incoming SWE Intern @ Coinbase</i></p> -->
+        <h3>Hi, my name is</h3>
+        <h1 style="font-size: 32pt">Allen Kaplan</h1>
+        <h2 style="font-size: 24pt">Software Engineer and Tech Entrepreneur</h2>
       </v-col>
     </v-row>
     <v-row justify="center" class="my-4">
+      <v-col cols="12" md="9" lg="8">
+        <p style="font-size: 14pt">
+          I'm a 4th Year Software Engineering student at York University in
+          Toronto. I have a deep passion for technology and entrepreneurship
+          that grew from the startup accelator at my school- BEST Lab, where I
+          currently am working as a research assistant until April 2021. In my
+          free time, I take my passion for technology to conferences,
+          competitions and hackathons. I'm passionate about mentorship and
+          helping pass on knowledge to peers.
+        </p>
+        <br />
+        <ul class="about">
+          <li>You'll find me in: Toronto, Canada</li>
+          <li>
+            You'll find me: hiking, cycling, camping, programming, talking
+            politics
+          </li>
+          <li>You'll find me using: Golang, Vue.js and Flutter</li>
+        </ul>
+
+        <br />
+
+        <v-btn to="/resume" block x-large class="my-4"
+          >Check out my resume</v-btn
+        >
+        <v-btn to="/projects" block x-large class="my-4"
+          >See some of my projects</v-btn
+        >
+        <v-btn to="/blog" block x-large class="my-4">Read my rambalings</v-btn>
+        <v-btn to="/contact" block x-large class="my-4">Contact me</v-btn>
+      </v-col>
+      <v-col cols="12" md="3" lg="4">
+        <div class="text-center pa-4">
+          <v-img class="headshot" src="headshot.png" />
+        </div>
+      </v-col>
+    </v-row>
+    <!-- <v-row justify="center" class="my-4">
       <ul class="bullets">
         <li>
           4th Year Software Engineering student in the Big Data stream enrolled
@@ -29,15 +55,6 @@
         <li>
           Passion for technological innovation, entrepreneurship and community
           involvement
-        </li>
-        <li>
-          Held positions in my school community such as President of the
-          Engineering Student Union and the Chair of Orientation Week (York has
-          the longest orientation in Canada at 9 full days)
-        </li>
-        <li>
-          Engaged in the local tech community- engaged within the Golang Toronto
-          (especially pre-covid)
         </li>
         <li>
           I have a deep passion for technology and entrepreneurship that grow
@@ -59,7 +76,7 @@
           and go cycling
         </li>
       </ul>
-    </v-row>
+    </v-row> -->
   </v-container>
 </template>
 
@@ -73,11 +90,11 @@ export default {};
 }
 
 .about > li {
-  font-size: 20pt;
-  font-style: bold;
+  font-size: 16pt;
+  /* font-style: bold; */
 }
 
 .bullets > li {
-  font-size: 16pt;
+  font-size: 14pt;
 }
 </style>
