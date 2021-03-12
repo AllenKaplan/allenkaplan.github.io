@@ -16,7 +16,7 @@ export default {};
 
 <style>
 .heading {
-  font-size: 72pt;
+  font-size: 48pt;
   text-align: center;
 }
 

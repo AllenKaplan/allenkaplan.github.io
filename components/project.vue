@@ -42,6 +42,6 @@ export default {
 
 <style>
 .description {
-  font-size: 20pt;
+  font-size: 14pt;
 }
 </style>

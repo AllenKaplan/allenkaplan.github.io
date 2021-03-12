@@ -13,7 +13,7 @@
         <p style="font-size: 14pt">
           I'm a 4th Year Software Engineering student at York University in
           Toronto. I have a deep passion for technology and entrepreneurship
-          that grew from the startup accelator at my school- BEST Lab, where I
+          that grew from the startup accelerator at my school- BEST Lab, where I
           currently am working as a research assistant until April 2021. In my
           free time, I take my passion for technology to conferences,
           competitions and hackathons. I'm passionate about mentorship and
@@ -22,11 +22,9 @@
         <br />
         <ul class="about">
           <li>You'll find me in: Toronto, Canada</li>
-          <li>
-            You'll find me: hiking, cycling, camping, programming, talking
-            politics
-          </li>
+          <li>You'll find me: hiking, cycling, camping, programming</li>
           <li>You'll find me using: Golang, Vue.js and Flutter</li>
+          <li>My expertise is in: cloud infrastrcture, backend development</li>
         </ul>
 
         <br />
@@ -37,7 +35,7 @@
         <v-btn to="/projects" block x-large class="my-4"
           >See some of my projects</v-btn
         >
-        <v-btn to="/blog" block x-large class="my-4">Read my rambalings</v-btn>
+        <v-btn to="/blog" block x-large class="my-4">Read my ramblings</v-btn>
         <v-btn to="/contact" block x-large class="my-4">Contact me</v-btn>
       </v-col>
       <v-col cols="12" md="3" lg="4">
