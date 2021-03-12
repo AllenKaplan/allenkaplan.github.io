@@ -24,7 +24,7 @@
           <li>You'll find me in: Toronto, Canada</li>
           <li>You'll find me: hiking, cycling, camping, programming</li>
           <li>You'll find me using: Golang, Vue.js and Flutter</li>
-          <li>My expertise is in: cloud infrastrcture, backend development</li>
+          <li>My expertise is in: cloud infrastructure, backend development</li>
         </ul>
 
         <br />
