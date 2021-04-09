@@ -35,7 +35,9 @@
         <v-btn to="/projects" block x-large class="my-4"
           >See some of my projects</v-btn
         >
-        <v-btn to="/blog" block x-large class="my-4">Read my ramblings</v-btn>
+        <v-btn to="/blog" block x-large class="my-4"
+          >Read my blog (posts coming soon!)</v-btn
+        >
         <v-btn to="/contact" block x-large class="my-4">Contact me</v-btn>
       </v-col>
       <v-col cols="12" md="3" lg="4">
